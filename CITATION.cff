@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: "Pawar"
+  given-names: "Ganesh"
+  country: "IN"
+  alias: ganpa
+- family-names: "Pawar"
+  given-names: "Adesh"
+  country: "IN"
+- family-names: "Pawar"
+  given-names: "Ashish"
+  country: "IN"
+- family-names: "Pawar"
+  given-names: "Ajay"
+  country: "IN"
+title: "DBMS Mini Project"
+version: 1.0.0
+date-released: 2021-08-21
+url: "https://github.com/ganpa3/DBMS_Mini_Project"

@@ -1,0 +1,20 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+cd "$(git rev-parse --show-toplevel)"
+
+if ! black --quiet --check --line-length 100 api; then
+    echo "Tujha python code ghan ahe."
+    echo "Tyala sundar banav nyasaathi ha command run kar."
+    echo "'black --line-length 100 api'"
+    echo
+    exit 1
+fi
+ 
+if ! prettier --loglevel silent --check website; then
+    echo "Tujha frontend code ghan ahe."
+    echo "Tyala sundar banav nyasaathi ha command run kar."
+    echo "'prettier --write website'"
+    echo
+    exit 1
+fi
